@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patua One';
+}
+
+.mobile-menu{
+    display: none;
+}
+
+:root{
+    --azul: #4786B7;
+    --cinza: #DEE2ED;
+}
+
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.playball{
+    font-family:'Playball';
+}
+
+/* header */
+header{
+    background-color: var(--azul);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo img{
+    width: 150px;
+    padding: 5px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    padding: 5px 0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+/* fim do header */
+
+main{
+    background: linear-gradient(180deg, #D3E1ED 0%, #FFFFFF 100%);
+
+}
+
+/* banner */
+.banner .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+
+.banner .container img{
+    width: 45%;
+    margin-top: 50px;
+}
+
+.banner .container p{
+    width: 40%;
+    font-size: 60px;
+    margin-top: 200px;
+    text-align: center;
+    color: var(--azul);
+}
+/* fim banner */
+
+
+/* galeria */
+.galeria{
+    margin: 200px 0 50px 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 70px;
+    color: var(--azul);
+}
+
+.carrossel{
+    background-color: white;
+    padding: 20px 2%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.imagem_carrossel{
+    width: 30%;
+    padding-top: 20%;
+    background-color: #ccc;
+}
+/* fim galeria */
+
+
+/* carrosel */
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide-group {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  
+  .slide {
+    width: 33.33%; /* Cada imagem ocupará 33.33% da largura do slide-group */
+    flex-shrink: 0;
+  }
+
+  
+  
+  .btnED {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .btnED:hover {
+    transform: translateY(-50%) scale(1.3);
+  }
+  
+  .prev {
+    left: 0;    
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  
+  
+  /* fim carrossel */
+
+  /* sobre e localização */
+
+  .sobre-localizacao{
+    margin: 100px 0;
+    padding: 100px 2%;
+  }
+
+.sobre-localizacao h2{
+    margin-bottom: 50px;
+}
+
+  .sobre-localizacao > .container{
+    display: flex;
+  }
+
+  .mapa iframe{
+    width: 80%;
+    height: 400px;
+  }
+
+  .sobre-localizacao .sobre{
+    width: 50%;
+  }
+
+  .sobre-localizacao .localizacao{
+    width: 50%;
+    text-align: center;
+  }
+
+  /* fim sobre e localização */
+
+  /* footer */
+.container-contato{
+    background-color: #DEE2ED;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-contato .contato{
+    padding: 20px 2%;
+}
+
+.container-contato .contato a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+.container-contato .contato img{
+    width: 30px;
+}
+
+.direitos-reservados{
+    background-color: #CDD7E0;
+}
+
+.container-contato .rede-sociais img{
+    width: 30px;
+}
+
+.container-contato .rede-sociais a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+.direitos-reservados{
+    text-align: center;
+    padding: 10px 0;
+}
+  /* fim footer */
+
+
+/* Pagina esqueci senha################################# */
+
+main .container{
+    padding: 0 2%;
+}
+
+#esqueci-senha p{
+    text-align: center;
+    color: #767676;
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+#esqueci-senha form{
+    max-width: 700px;
+    width: 100%;
+    margin: 100px auto;
+}
+
+#esqueci-senha input[type=email]{
+    padding: 20px;
+    width: 100%;
+    border-bottom: 2px solid #2196F3;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 19px;
+}
+
+.box-captcha{
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.wraper-captcha{
+    display: flex;
+    align-items: center;
+}
+
+.wraper-captcha label{
+    padding-left: 23px;
+}
+
+input[type=checkbox]{
+    width: 35px;
+    height: 35px;
+}
+
+#esqueci-senha button[type=submit]{
+    width: 100%;
+    padding: 14px 0;
+    background-color: #006BC1;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#esqueci-senha button[type=submit]:hover{
+    background-color: #297cc0;;
+}
+
+
+  

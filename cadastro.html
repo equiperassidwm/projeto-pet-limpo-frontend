@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+        <header>
+            <div class="container">
+                <nav class="desktop-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="mobile-menu">
+                    <i class="fa-solid fa-bars" id="menu"></i>
+                    <ul class="itens-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+            </div>
+        </header>
+    
+        <h1 style="text-align: center; margin: 60px 0;">Cadastro de Cliente</h1>
+        <form id="form-cadastro" method="post">
+            <section class="campo">
+                <h2>Dados Pessoais</h2>
+                <div class="dpessoais">
+                    <div class="inputs-container">
+                        <div class="wraper-input">
+                            <img class="img" src="img/nome.svg" alt=""><input required  type="text" name="nome" id="nome"  placeholder="Nome">
+                        </div>
+                        <div class="wraper-input">
+                            <img class="img" src="img/carta.svg" alt=""><input required type="text" name="cpf" id="cpf"  placeholder="CPF">
+                        </div>
+                    </div>
+                    <div class="inputs-container">
+                        <div class="wraper-input">
+                            <img class="img" src="img/carta.svg" alt=""><input required type="email" name="correio" id="email" placeholder="Email">
+                        </div>
+                        <div class="wraper-input">
+                            <img class="img" src="img/telefone.svg" alt=""><input required type="tel" name="telefone" id="telefone"placeholder="Telefone">
+                        </div>
+                    </div>
+            
+                </div>
+                <h2>Endereço</h2>
+                <div class="dendereco">
+                    <div class="inputs-container">
+                        <div class="wraper-input">
+                            <img class="img" src="img/carta.svg" alt=""><input required type="text" name="cep" id="cep" placeholder="CEP" onblur="buscarCEP()">
+                        </div>
+                        <div class="wraper-input">
+                            <img class="img" src="img/carta.svg" alt=""><input type="text" name="endereco" id="complemento"  placeholder="Complemento">
+                        </div>
+                    </div>
+                    <div class="inputs-container">
+                        <div class="wraper-input">
+                            <img class="img" src="img/carta.svg" alt=""><input required type="text" name="numero" id="logradouro" placeholder="Logradouro">
+                        </div>
+                        <div class="wraper-input">
+                            <img class="img" src="img/carta.svg" alt=""><input required type="text" name="setor" id="bairro"  placeholder="Bairro">
+                        </div>
+                    </div>
+                    <div class="inputs-container">
+                        <div class="wraper-input">
+                            <img class="img" src="img/carta.svg" alt=""><input required type="text" name="cid" id="cidade"  placeholder="Cidade">
+                        </div>
+                    </div>
+                        <div class="inputs-container">
+                            <div class="wraper-input">
+                                <img class="img" src="img/carta.svg" alt=""><input required type="text" name="complet" id="uf" size="14" placeholder="UF">
+                            </div>
+                        </div>
+            
+                </div>
+                <h2>Senha</h2>
+                <div class="dsenha">
+                    <div class="inputs-container">
+                        <div class="wraper-input">
+                            <img class="img" src="img/senha.svg" alt=""><input type="password" name="" id="criesuasenha" placeholder="Crie sua Senha">
+                        </div>
+                        <div class="wraper-input">
+                            <img class="img" src="img/senha.svg" alt=""><input type="password" name="" id="confirmarsenha"placeholder="Confirma sua Senha">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="botao"><input class="enviar" type="submit" value="Cadastrar" onclick="enviar"></div>
+        </form>
+
+        <div class="modal-pop">
+            <div class="pop-up">
+                <p>CADASTRO REALIZADO COM SUCESSO!</p>
+                <button id="ok-pop">OK</button>
+            </div>
+        </div>
+        
+        <script src="js/cep.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/mascara.js"></script>
+        <script src="js/popup-modal.js"></script>
+        <script src="https://kit.fontawesome.com/0ca201c7fe.js" crossorigin="anonymous"></script>
+</body>
+</html>

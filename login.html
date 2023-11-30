@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile-menu">
+                <i class="fa-solid fa-bars" id="menu"></i>
+                <ul class="itens-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+        </div>
+    </header>
+
+    <section id="login">
+        <div class="card">
+            <h1>Bem-vindo de volta!!</h1>
+            <div class="dog-cat">
+                <img class="img1" src="img/noto-dog-face.svg" alt="img dog">
+                <img class="img2"src="img/noto-v-1-cat-face.svg" alt="img dog">
+            </div>
+        </div>
+        <div id="campoLogin" class="form">
+            <form >
+            <div class="texto-inicial">
+                <h1>Acesse sua conta agora <br> mesmo</h1>
+            </div>
+            <!-- E-mail -->
+            <div  class="campos">
+                <div class="inputs">
+                    <img class="img" src="img/icone-usuario.svg" alt="icone-email">
+                    <input  type="email" placeholder="E-mail">
+
+                </div>
+
+                <!-- Senha -->
+                <div class="inputs">
+                    <img class="img"src="img/icone-senha.svg" alt="icone-senha">
+                    <input id="senha" type="password" placeholder="Senha">
+
+                </div>
+
+                <div class="esqueci-senha">
+                    <a href="esqueci-senha.html">Esqueci minha senha </a>
+
+                </div>
+            </div>
+            <br>
+            <button class="btn" type="submit">Entrar</button>
+            <div class="registro">
+                <p>Não tem uma conta?<a href="cadastro.html">Registre-se</a></p>
+
+            </div>
+            </form>
+        </div>      
+    </section>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/0ca201c7fe.js" crossorigin="anonymous"></script>
+</body>
+</html>

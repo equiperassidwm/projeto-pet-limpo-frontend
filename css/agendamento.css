@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@500 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to bottom, #D3E1ED,#ffff) ;
+}
+
+:root{
+    --azul: #4786B7;
+    --cinza: #DEE2ED;
+}
+
+.mobile-menu{
+    display: none;
+}
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* header */
+header{
+    background-color: var(--azul);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family:'Patua One' ;
+}
+
+.logo img{
+    width: 150px;
+    padding: 5px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    padding: 5px 0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+/* fim do header */
+h2{
+    font-family: 'Patua One', serif;
+    color: #4786B7;
+    background-color: white;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5% auto;
+    
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0 20px 10%;
+
+}
+
+.opcao{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: space-between;
+    margin-inline: 10%;
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 16px;
+}
+.porte{
+    display: flex; 
+    background-color: white;
+    justify-content: space-between;
+    margin-inline: 10%;
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 16px;
+}
+.p{
+    display: flex;
+}
+.m{
+    display: flex;
+}
+.g{
+    display: flex;
+}
+.sn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-inline: 10%;
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+
+}
+.alergia{
+    border-radius: 16px;   
+    outline: 0;   
+    padding: 8px;
+    border: 0;
+    height: 30px;
+    margin: auto;
+    display: block;
+    width: 79%;
+
+}
+
+.data{
+    margin: auto;
+    display: block;
+    width: 20%;
+    height: 35px;
+    border-radius: 16px;
+    outline: 0;
+    border: 0;
+    
+}
+.botao{
+    align-items: center;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    font: bold;
+    background: #006BC1;
+    color: white;
+    margin:80px auto;
+    display: block;
+    border-radius: 15px;
+    height: 35px;
+    transition: 0.3s;
+    border: 1px solid #006BC1;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: transparent;
+    color: #006BC1;
+    transition: 0.3s;
+    
+      
+}
+
+#possuiAlergiaNao{
+    margin-left: 10px;
+}
+
+label{
+    padding-left: 7px !important;
+}
+
+@media screen and (max-width: 520px) {
+    body{
+        height: auto;
+    }
+    
+    .boton{
+        width: 100%;
+    }
+    
+    .data{
+        width: 80%;
+        height: 35px;
+        
+    }
+    .opcao{
+        display: block !important;
+    }
+    .sn{
+        
+        display: block;
+        
+    }
+
+}
+@media screen and (max-width: 414px) {
+    body{
+        height: 100vh;
+    }
+    
+}
+
+@media screen and (max-width: 380px) {
+    body{
+        height: 100vh;
+    }
+    
+}

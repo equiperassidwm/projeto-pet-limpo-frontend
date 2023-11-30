@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px){
+    .mobile-menu{
+        display: block;
+    }
+
+    .mobile-menu ul{
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 145px;
+        left: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .mobile-menu ul li{
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-menu ul li a{
+        color: black;
+        display: block;
+        font-size: 30px;
+        padding: 10px 0;
+        width: 100%;
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    .mobile-menu ul li a:hover{
+        background-color: #ccc;
+    }
+
+    .mobile-menu i{
+        position: relative;
+        font-size: 50px;
+        left: 20px;
+        cursor: pointer;
+    }
+
+
+    .desktop-menu{
+        display: none;
+    }
+
+    .banner .container{
+        text-align: center;
+    }
+
+    .banner .container img{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .banner .container p{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 1024px){
+    .sobre-localizacao > .container{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+    
+      .sobre-localizacao .sobre{
+        width: 100%;
+      }
+    
+      .sobre-localizacao .localizacao{
+        width: 100%;
+        margin-top: 50px;
+      }
+
+      .mapa iframe{
+        width: 100%;
+      }
+
+    .slide {
+        width: 100%; /* Cada imagem ocupará 100% da largura do slide-group */
+    }
+    
+}

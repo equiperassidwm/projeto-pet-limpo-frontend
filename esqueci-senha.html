@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esqueci Senha</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="desktop-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="mobile-menu">
+                    <i class="fa-solid fa-bars" id="menu"></i>
+                    <ul class="itens-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+            </div>
+        </header>
+        <main id="esqueci-senha">
+            <div class="container">
+                <p>Para recuperar  sua senha, insira o e-mail cadastrado na plataforma.</p>
+                <form action="">
+                    <input type="email" placeholder="E-MAIL">
+                    <div class="box-captcha">
+                        <div class="wraper-captcha">
+                            <input type="checkbox" title="Captcha" value="true" name="nao_sou_robo" id="captcha"> <label for="captcha">Não sou um robô</label>
+                        </div>
+                        <img src="img/alerta_captcha.svg" alt="alerta">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </main>
+        <script src="js/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/0ca201c7fe.js" crossorigin="anonymous"></script>
+        <script src="js/carrossel.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
+</html>

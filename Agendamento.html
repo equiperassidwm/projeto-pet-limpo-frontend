@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agendamento.css">
+    
+    
+
+    <title>Agendamento</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile-menu">
+                <i class="fa-solid fa-bars" id="menu"></i>
+                <ul class="itens-menu">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+        </div>
+    </header>
+    
+    <h2>AGENDAMENTO</h2>
+    <h3>Serviços</h3>
+    
+        <div class="opcao">
+            <div >
+                <div><input type="checkbox" name="" id="banho"><label for="banho">Banho</label></div>
+                <div><input type="checkbox" name="" id="banhoHidratacao"><label for="banhoHidratacao">Banho com Hidratação</label></div>
+                <div><input type="checkbox" name="" id="tosaGeral"><label for="tosaGeral">Tosa Geral</label></div>
+            </div>  
+
+            <div>
+                <div><input type="checkbox" name="" id="tosaBebe"><label for="tosaBebe">Tosa Bebê</label></div>
+                <div><input type="checkbox" name="" id="tosaHigienica"><label for="tosaHigienica">Tosa Higiênica</label></div>
+                <div><input type="checkbox" name="" id="perfume"><label for="perfume">Perfume</label></div>
+            </div>
+        
+            <div>
+                <div><input type="checkbox" name="" id="corteUnha"><label for="corteUnha">Corte de Unha</label></div>
+                <div><input type="checkbox" name="" id="acessorio"><label for="acessorio">Acessórios</label></div>
+            </div>
+            
+        </div>
+    
+
+    <h3>Porte/Tamanho</h3>
+    <div class="porte">
+        <div class="p"><input type="radio" name="porte" id="p"><label for="p">Pequeno</label></div>
+        <div class="m"><input type="radio" name="porte" id="m"><label for="m">Médio</label></div>
+        <div class="g"><input type="radio" name="porte" id="g"><label for="g">Grande</label></div>
+    </div>
+
+    <h3>Possui Alergia?</h4>
+    <div class="sn">
+        <input type="radio" name="check" id="possuiAlergiaSim"><label for="possuiAlergiaSim">Sim</label>
+        <input type="radio" name="check" id="possuiAlergiaNao"><label for="possuiAlergiaNao">Não</label>
+        
+    </div>
+
+    <div class="inp">
+        <input class="alergia"  type="text" id="qualAlergia" placeholder="Qual?">
+    </div>
+
+    <h3>Data e Hora</h3>
+    <div class="dt">
+        <input class="data" type="datetime-local" name="dataHora" id="dt">
+    </div>
+
+    <div class="boton"><button class="botao">AGENDAR</button></div>
+</body>
+</html>
