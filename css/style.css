@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+@font-face {
+    font-family: 'my coffee break';
+    src: url('../fonts/My\ Coffee\ Break.otf');
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,17 +36,30 @@
 /* header */
 header{
     background-color: var(--azul);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .logo img{
-    width: 100px;
-    padding: 5px 0;
+    width: 80px;
+    padding: 10px 0;
 }
 
 header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.wraper-ul{
+    margin-top: 150px;
+}
+
+#menu-d{
+    position: absolute;
+    right: -350px;
+    top: 40px;
 }
 
 nav{
@@ -58,32 +80,50 @@ nav ul li a{
     margin: 0 30px;
     font-size: 20px;
     text-transform: uppercase;
+    transition: 0.5s;
 }
+
+nav ul li a:hover{
+    text-decoration: underline 2px;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+
 /* fim do header */
 
 main{
     background: linear-gradient(180deg, #D3E1ED 0%, #FFFFFF 100%);
-
+    
 }
 
 /* banner */
-.banner .container{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 2%;
-}
 
-.banner .container img{
-    width: 45%;
-    margin-top: 50px;
-}
-
-.banner .container p{
-    width: 40%;
-    font-size: 60px;
-    margin-top: 200px;
+.fundo{
+    width: 100%;
+    background: rgba(252, 9, 9, 0.486) url("../img/3730301_73977.jpg") no-repeat right top;;
+    background-size: contain;
+    background-position: top;
+    background-color: #dfdfdd;
     text-align: center;
-    color: var(--azul);
+    padding: 19% 0;
+}
+
+.overley{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.banner p{
+    font-size: 60px;
+    font-family:'Playball';
+    color: #006BC1; 
+    background-color: #dfdfdd;
+    text-align: center;
+    padding: 194px 0 0 0;
+    
 }
 /* fim banner */
 
@@ -91,12 +131,15 @@ main{
 /* galeria */
 .galeria{
     margin: 200px 0 50px 0;
+    
 }
 
 h2{
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     color: var(--azul);
+    font-family: 'my coffee break';
+    margin-bottom: 40px;
 }
 
 .carrossel{
@@ -117,7 +160,7 @@ h2{
 
 /* carrosel */
 .carousel {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -151,6 +194,7 @@ h2{
     background-color: transparent;
     cursor: pointer;
     transition: transform 0.3s ease;
+    z-index: 0;
   }
 
   .btnED:hover {
@@ -165,37 +209,85 @@ h2{
     right: 0;
   }
   
-  
-  
   /* fim carrossel */
 
   /* sobre e localização */
 
-  .sobre-localizacao{
-    margin: 100px 0;
-    padding: 100px 2%;
+  .sobre{
+    width: 100%;
+    margin: 100px auto;
   }
 
-.sobre-localizacao h2{
-    margin-bottom: 50px;
-}
+  .sobre i{
+    font-size: 40px;
+    color: #c4c1af;
+    text-shadow: 1px 1px 1px black;
+  }
 
-  .sobre-localizacao > .container{
+  .sobre h4{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 0;
+  }
+
+  .sobre p{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .wraper-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card-sobre{
+    text-align: center;
+    width: 30%;
+    box-shadow: 0px 0px 45px 0px rgba(225, 225, 225, 0.5);
+    padding:30px 30px 60px 30px;
+    background-color: whitesmoke;
+    transition: 0.5s;
+  }
+
+  .card-sobre:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .localizacao{
+    padding: 0 2%;
+  }
+
+  .localizacao .container{
     display: flex;
   }
 
-  .mapa iframe{
-    width: 80%;
-    height: 400px;
+  .localizacao .mapa{
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 25%;
+    position: relative;
+    margin: 50px auto;
   }
 
-  .sobre-localizacao .sobre{
-    width: 50%;
-  }
-
-  .sobre-localizacao .localizacao{
-    width: 50%;
+  .contato-mapa{
+    margin: 100px auto;
+    font-size: 20px;
+    line-height: 35px;
+    width: 70%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .localizacao .mapa iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   /* fim sobre e localização */

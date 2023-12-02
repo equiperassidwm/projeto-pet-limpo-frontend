@@ -27,8 +27,18 @@ header{
 }
 
 .logo img{
-    width: 100px;
-    padding: 5px 0;
+    width: 80px;
+    padding: 10px 0;
+}
+
+.wraper-ul{
+    margin-top: 150px;
+}
+
+#menu-d{
+    position: absolute;
+    right: -350px;
+    top: 40px;
 }
 
 header .container{
@@ -55,7 +65,17 @@ nav ul li a{
     margin: 0 30px;
     font-size: 20px;
     text-transform: uppercase;
+    transition: 0.5s;
+    
 }
+
+
+nav ul li a:hover{
+    text-decoration: underline 2px;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
 /* fim do header */
 
 h1{
@@ -125,7 +145,7 @@ h2{
     display: block;
     background: #006BC1;
     color: white;
-    margin: 3% 2%;
+    margin:50px auto;
     border-radius: 15px;
     border: 1px solid #006BC1;
     cursor: pointer;

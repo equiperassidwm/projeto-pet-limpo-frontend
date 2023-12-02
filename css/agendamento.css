@@ -32,14 +32,24 @@ header{
 }
 
 .logo img{
-    width: 150px;
-    padding: 5px 0;
+    width: 80px;
+    padding: 10px 0;
 }
 
 header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.wraper-ul{
+    margin-top: 150px;
+}
+
+#menu-d{
+    position: absolute;
+    right: -350px;
+    top: 40px;
 }
 
 nav{
@@ -60,7 +70,15 @@ nav ul li a{
     margin: 0 30px;
     font-size: 40px;
     text-transform: uppercase;
+    transition: 0.5s;
 }
+
+
+nav ul li a:hover{
+    text-decoration: underline 2px;
+    display: inline-block;
+}
+
 /* fim do header */
 h2{
     font-family: 'Patua One', serif;
